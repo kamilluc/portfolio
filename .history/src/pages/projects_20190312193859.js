@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 // import Helmet from 'react-helmet'
 // import Contact from '../components/Contact'
 import { StaticQuery, graphql } from 'gatsby'
-import ProjectList from '../components/ProjectList'
+
 const Projects = () => (
   <StaticQuery
     query={graphql`
@@ -24,7 +24,7 @@ const Projects = () => (
         }
       }
     `}
-    render={data => <ProjectList data={data} />}
+    render={data => <Projects data={data} />}
   />
 )
 
