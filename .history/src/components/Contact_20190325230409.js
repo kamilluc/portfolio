@@ -35,7 +35,6 @@ class Contact extends React.Component {
                   />
                 </div>
               </div>
-              <br />
               <ul className="actions">
                 <li>
                   <input type="submit" value="Wyślij Wiadomość" />
@@ -57,13 +56,13 @@ class Contact extends React.Component {
                 <h3 className="icon fa-mobile">
                   <span className="label">Phone</span>
                 </h3>
-                +48 <strong>731 584 128</strong>
+                +48 731 584 128
               </li>
               <li>
                 <h3 className="icon fa-envelope-o">
                   <span className="label">Email</span>
                 </h3>
-                kamilluc@outlook.com
+                <a href="#">kamilluc@outlook.com</a>
               </li>
             </ul>
           </div>

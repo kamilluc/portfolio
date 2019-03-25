@@ -110,112 +110,72 @@ class ProjectList extends React.Component {
   }
 
   render() {
-    const { data } = this.props
-    const projects = data.project.projects
-    console.log(projects)
-    const projs = projects.map(proj => (
-      <div key={proj.id}>
-        <h2>
-          <a href={proj.github} className="icon fa-github" target="_blank">
-            <span className="label">Github</span>
-          </a>{' '}
-          {proj.title}
-        </h2>
-        <h3>{proj.subtitle}</h3>
-        <img src={proj.image.url} alt={proj.title} width="80%" />
-        <p>
-          <strong>Opis</strong> {proj.description}
-        </p>
-        <p>
-          <strong>Technologie</strong> {proj.technologies}
-        </p>
-        <hr />
-      </div>
-    ))
+    const { data } = this.props.project
+
+    const siteTitle = 'Gatsby Starter - Strata'
+    const siteDescription = 'Site description'
+
     return (
       <Layout>
-        <div id="main" className="move-to-top">
+        <Helmet>
+          <title>{siteTitle}</title>
+          <meta name="description" content={siteDescription} />
+        </Helmet>
+        {console.log(data)}
+        <div id="main">
           <section id="one">
             <header className="major">
-              <h1>Moje projekty</h1>
-              <hr />
+              <h2>
+                aaaIpsum lorem dolor aliquam ante commodo
+                <br />
+                magna sed accumsan arcu neque.
+              </h2>
             </header>
-            {projs}
+            <p>
+              Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc
+              nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae
+              lobortis tortor primis integer massa adipiscing id nisi accumsan
+              pellentesque commodo blandit enim arcu non at amet id arcu magna.
+              Accumsan orci faucibus id eu lorem semper nunc nisi lorem
+              vulputate lorem neque cubilia.
+            </p>
+            <ul className="actions">
+              <li>
+                <a href="#" className="button">
+                  Learn More
+                </a>
+              </li>
+            </ul>
           </section>
+
+          <section id="two">
+            <h2>Recent Work</h2>
+
+            <Gallery
+              images={DEFAULT_IMAGES.map(
+                ({ id, src, thumbnail, caption, description }) => ({
+                  src,
+                  thumbnail,
+                  caption,
+                  description,
+                })
+              )}
+            />
+
+            <ul className="actions">
+              <li>
+                <a href="#" className="button">
+                  Full Portfolio
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <Contact />
         </div>
       </Layout>
     )
   }
-
-  // render() {
-  //   const { data } = this.props
-  //   const projects = data.project.projects
-
-  //   const siteTitle = 'Gatsby Starter - Strata'
-  //   const siteDescription = 'Site description'
-
-  //   return (
-  //     <Layout>
-  //       <Helmet>
-  //         <title>{siteTitle}</title>
-  //         <meta name="description" content={siteDescription} />
-  //       </Helmet>
-  //       {console.log(data)}
-  //       {console.log(projects)}
-  //       <div id="main">
-  //         <section id="one">
-  //           <header className="major">
-  //             <h2>
-  //               aaaIpsum lorem dolor aliquam ante commodo
-  //               <br />
-  //               magna sed accumsan arcu neque.
-  //             </h2>
-  //           </header>
-  //           <p>
-  //             Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc
-  //             nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae
-  //             lobortis tortor primis integer massa adipiscing id nisi accumsan
-  //             pellentesque commodo blandit enim arcu non at amet id arcu magna.
-  //             Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-  //             vulputate lorem neque cubilia.
-  //           </p>
-  //           <ul className="actions">
-  //             <li>
-  //               <a href="#" className="button">
-  //                 Learn More
-  //               </a>
-  //             </li>
-  //           </ul>
-  //         </section>
-
-  //         <section id="two">
-  //           <h2>Recent Work</h2>
-
-  //           <Gallery
-  //             images={DEFAULT_IMAGES.map(
-  //               ({ id, src, thumbnail, caption, description }) => ({
-  //                 src,
-  //                 thumbnail,
-  //                 caption,
-  //                 description,
-  //               })
-  //             )}
-  //           />
-
-  //           <ul className="actions">
-  //             <li>
-  //               <a href="#" className="button">
-  //                 Full Portfolio
-  //               </a>
-  //             </li>
-  //           </ul>
-  //         </section>
-
-  //         <Contact />
-  //       </div>
-  //     </Layout>
-  //   )
-  // }
 
   // render() {
   //   const { data } = this.props

@@ -20,14 +20,11 @@ class Header extends React.Component {
             Zainteresowany technologią Web'ową.
           </h1>
         </div>
-        <Link to="/">Strona Główna</Link>
-        {'  '} <Link to="/cv">CV</Link>
-        {'  '}
+        <Link to="/">Strona Główna</Link> {' | '}
+        <Link to="/cv">CV</Link> {' | '}
         <Link to="/projects">Projekty</Link>
-        {'  '}
         <Link to="/information">Kontakt</Link>
-        {'  '} <br /> <br />
-        <br />
+        <br /> <br />
         <Footer />
       </header>
     )

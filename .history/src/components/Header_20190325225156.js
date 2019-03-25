@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Footer from './Footer'
-import avatar from '../assets/images/avataaars.png'
+import avatar from '../assets/images/avataaars'
 import { Link } from 'gatsby'
 
 class Header extends React.Component {
@@ -21,13 +21,10 @@ class Header extends React.Component {
           </h1>
         </div>
         <Link to="/">Strona Główna</Link>
-        {'  '} <Link to="/cv">CV</Link>
-        {'  '}
+        <Link to="/cv">CV</Link>
         <Link to="/projects">Projekty</Link>
-        {'  '}
         <Link to="/information">Kontakt</Link>
-        {'  '} <br /> <br />
-        <br />
+        <br /> <br />
         <Footer />
       </header>
     )

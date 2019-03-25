@@ -8,62 +8,62 @@ class Contact extends React.Component {
         <p />
         <div className="row">
           <div className="8u 12u$(small)">
-            <form action="mailto:kamilluc@outlook.com" method="post">
+            <form
+              action="mailto:kamilluc@outlook.com"
+              method="post"
+              enctype="text/plain"
+            >
               <div className="row uniform 50%">
                 <div className="6u 12u$(xsmall)">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Twoje Imię"
-                  />
+                  <input type="text" name="name" id="name" placeholder="Name" />
                 </div>
                 <div className="6u 12u$(xsmall)">
                   <input
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Twój Email"
+                    placeholder="Email"
                   />
                 </div>
                 <div className="12u">
                   <textarea
                     name="message"
                     id="message"
-                    placeholder="Wiadomość"
+                    placeholder="Message"
                     rows="4"
                   />
                 </div>
               </div>
-              <br />
-              <ul className="actions">
-                <li>
-                  <input type="submit" value="Wyślij Wiadomość" />
-                </li>
-              </ul>
             </form>
+            <ul className="actions">
+              <li>
+                <input type="submit" value="Wyślij Wiadomość" />
+              </li>
+            </ul>
           </div>
           <div className="4u 12u$(small)">
             <ul className="labeled-icons">
               <li>
                 <h3 className="icon fa-home">
-                  <span className="label">Adres</span>
+                  <span className="label">Address</span>
                 </h3>
-                Miasteczko AGH
+                1234 Somewhere Rd.
                 <br />
-                Kraków
+                Nashville, TN 00000
+                <br />
+                United States
               </li>
               <li>
                 <h3 className="icon fa-mobile">
                   <span className="label">Phone</span>
                 </h3>
-                +48 <strong>731 584 128</strong>
+                000-000-0000
               </li>
               <li>
                 <h3 className="icon fa-envelope-o">
                   <span className="label">Email</span>
                 </h3>
-                kamilluc@outlook.com
+                <a href="#">hello@untitled.tld</a>
               </li>
             </ul>
           </div>

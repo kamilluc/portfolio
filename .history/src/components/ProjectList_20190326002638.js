@@ -112,33 +112,13 @@ class ProjectList extends React.Component {
   render() {
     const { data } = this.props
     const projects = data.project.projects
-    console.log(projects)
-    const projs = projects.map(proj => (
-      <div key={proj.id}>
-        <h2>
-          <a href={proj.github} className="icon fa-github" target="_blank">
-            <span className="label">Github</span>
-          </a>{' '}
-          {proj.title}
-        </h2>
-        <h3>{proj.subtitle}</h3>
-        <img src={proj.image.url} alt={proj.title} width="80%" />
-        <p>
-          <strong>Opis</strong> {proj.description}
-        </p>
-        <p>
-          <strong>Technologie</strong> {proj.technologies}
-        </p>
-        <hr />
-      </div>
-    ))
+    const projs = projects.map(proj => <p key={proj.id}>{proj.title}</p>)
     return (
       <Layout>
         <div id="main" className="move-to-top">
           <section id="one">
             <header className="major">
-              <h1>Moje projekty</h1>
-              <hr />
+              <h1>Projects</h1>
             </header>
             {projs}
           </section>

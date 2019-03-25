@@ -39,9 +39,9 @@ class Cv extends Component {
         <div id="main" className="move-to-top">
           <section id="one" ref={this.myInput}>
             <h2 className="icon fa-download">
-              <a href={pdf} downlaod="true">
+              <a href={pdf} downlaod>
                 {' '}
-                Pobierz CV (PDF)
+                Pobierz CV
               </a>
             </h2>
             <Document file={pdf} onLoadSuccess={this.onDocumentLoadSuccess}>

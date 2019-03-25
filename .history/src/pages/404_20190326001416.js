@@ -11,6 +11,8 @@ const NotFoundPage = () => (
         <p>Taka podstrona nie istnieje</p>
         <Link to="/">Powrót do strony Głównej</Link>
       </section>
+
+      <Contact />
     </div>
   </Layout>
 )

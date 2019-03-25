@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 class Footer extends React.Component {
   render() {
-    const date = new Date().getYear() + 1900
+    const date = new Date()
 
     return (
       <div id="footer">
@@ -29,7 +29,7 @@ class Footer extends React.Component {
             </li>
           </ul>
           <ul className="copyright">
-            <li>Copyright &copy; {date} Kamil Łuc</li>
+            <li>Copyright &copy; {date.getYear() + 1900} Kamil Łuc</li>
             <li>
               Witryna stworzona w{' '}
               <a href="https://www.gatsbyjs.org/">GatsbyJS</a> 👌

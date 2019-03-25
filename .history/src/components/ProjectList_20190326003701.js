@@ -123,12 +123,8 @@ class ProjectList extends React.Component {
         </h2>
         <h3>{proj.subtitle}</h3>
         <img src={proj.image.url} alt={proj.title} width="80%" />
-        <p>
-          <strong>Opis</strong> {proj.description}
-        </p>
-        <p>
-          <strong>Technologie</strong> {proj.technologies}
-        </p>
+        <p>{proj.description}</p>
+        <pre>Technologie: {proj.technologies}</pre>
         <hr />
       </div>
     ))
@@ -137,8 +133,7 @@ class ProjectList extends React.Component {
         <div id="main" className="move-to-top">
           <section id="one">
             <header className="major">
-              <h1>Moje projekty</h1>
-              <hr />
+              <h1>Moje wybrane projekty</h1>
             </header>
             {projs}
           </section>

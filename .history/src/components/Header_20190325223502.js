@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Footer from './Footer'
-import avatar from '../assets/images/avataaars.png'
+import avatar from '../assets/images/avatar.jpg'
 import { Link } from 'gatsby'
 
 class Header extends React.Component {
@@ -14,20 +14,15 @@ class Header extends React.Component {
             <img src={avatar} alt="" />
           </a>
           <h1>
-            <strong>Kamil Łuc</strong>, student 5'tego roku
-            <br /> Informatyki Stosowanej na AGH.
-            <br />
-            Zainteresowany technologią Web'ową.
+            <strong>Kamil Łuc</strong>, student na 5'tym roku Informatyki
+            Stosowanej na AGH. Zainteresowany technologią Web'ową.
           </h1>
         </div>
         <Link to="/">Strona Główna</Link>
-        {'  '} <Link to="/cv">CV</Link>
-        {'  '}
+        <Link to="/cv">CV</Link>
         <Link to="/projects">Projekty</Link>
-        {'  '}
-        <Link to="/information">Kontakt</Link>
-        {'  '} <br /> <br />
-        <br />
+        <Link to="/contact">Kontakt</Link>
+        <br /> <br />
         <Footer />
       </header>
     )

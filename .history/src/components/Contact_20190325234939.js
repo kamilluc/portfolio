@@ -63,7 +63,7 @@ class Contact extends React.Component {
                 <h3 className="icon fa-envelope-o">
                   <span className="label">Email</span>
                 </h3>
-                kamilluc@outlook.com
+                <a href="#">kamilluc@outlook.com</a>
               </li>
             </ul>
           </div>
