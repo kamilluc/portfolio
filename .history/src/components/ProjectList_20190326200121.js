@@ -5,28 +5,18 @@ import Layout from '../components/layout'
 
 class ProjectList extends React.Component {
   render() {
-    const siteTitle = 'Kamil Łuc - Portfolio'
-    const siteDescription = 'Kamil Łuc - Student, Software Developer, Kraków'
+    const siteTitle = 'Gatsby Starter - Strata'
+    const siteDescription = 'Site description'
     const { data } = this.props
     const projects = data.project.projects
     const projs = projects.map(proj => (
       <div key={proj.id}>
         <h2>
-          <a
-            href={proj.github}
-            className="icon fa-github"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={proj.github} className="icon fa-github" target="_blank">
             <span className="label">Github</span>
           </a>{' '}
           {proj.demo ? (
-            <a
-              href={proj.demo}
-              className="icon fa-dribbble"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={proj.demo} className="icon fa-dribbble" target="_blank">
               <span className="label">Demo</span>
             </a>
           ) : null}{' '}

@@ -22,8 +22,8 @@ class Cv extends Component {
 
   render() {
     const { pageNumber } = this.state
-    const siteTitle = 'Kamil Łuc - CV'
-    const siteDescription = 'Kamil Łuc - Student, Software Developer, Kraków'
+    const siteTitle = 'Gatsby Starter - Strata'
+    const siteDescription = 'Site description'
     // const width = document.getElementById('one').offsetWidth
 
     return (

@@ -121,11 +121,11 @@ class HomeIndex extends React.Component {
           <meta name="description" content={siteDescription} />
         </Helmet>
 
-        <div id="main" className="move-to-top">
+        <div id="main">
           <section id="one">
             <header className="major">
               <h2>
-                <Link to="/">Kamil Łuc</Link>
+                <strong>Kamil Łuc</strong>
               </h2>
             </header>
             <p>
@@ -134,12 +134,12 @@ class HomeIndex extends React.Component {
               w solidnym zespole aby zdobyć komercyjne doświadczenie.
             </p>
 
-            <h2>Umiejętności</h2>
+            <h4>Umiejętności</h4>
             <p className="techs">
               JavaScript, React, Gatsby, REST, HTTP,
               <br />
-              HTML, CSS, Bootstrap, GIT, Node, <br />
-              Express, Java, JavaFX, SQL, JIRA
+              HTML, CSS, Bootstrap, GIT, Node, Express, <br />
+              Java, JavaFX, SQL, JIRA
               <br />
             </p>
           </section>

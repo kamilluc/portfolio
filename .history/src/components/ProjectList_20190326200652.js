@@ -5,8 +5,8 @@ import Layout from '../components/layout'
 
 class ProjectList extends React.Component {
   render() {
-    const siteTitle = 'Kamil Łuc - Portfolio'
-    const siteDescription = 'Kamil Łuc - Student, Software Developer, Kraków'
+    const siteTitle = 'Gatsby Starter - Strata'
+    const siteDescription = 'Site description'
     const { data } = this.props
     const projects = data.project.projects
     const projs = projects.map(proj => (

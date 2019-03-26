@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
 class Footer extends React.Component {
   render() {
     const date = new Date().getYear() + 1900
@@ -14,26 +13,21 @@ class Footer extends React.Component {
                 href="https://github.com/kamilluc"
                 className="icon fa-github"
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <span className="label">Github</span>
               </a>
             </li>
             <li>
-              <a
-                href="https://www.facebook.com/kamil.potempodam"
-                className="icon fa-facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to="/" className="icon fa-facebook">
                 <span className="label">Facebook</span>
-              </a>
+              </Link>
             </li>
             <li>
               <Link to="/" className="icon fa-dribbble">
                 <span className="label">Portfolio</span>
               </Link>
             </li>
+
             <li>
               <Link to="/information" className="icon fa-envelope-o">
                 <span className="label">Email</span>

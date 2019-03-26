@@ -14,16 +14,17 @@ class Cv extends Component {
   }
   componentDidMount() {
     this.setState({ width: this.myInput.current.offsetWidth })
+    // console.log(this.myInput.current.offsetWidth)
   }
 
-  // onDocumentLoadSuccess = ({ numPages }) => {
-  //   this.setState({ numPages })
-  // }
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages })
+  }
 
   render() {
-    const { pageNumber } = this.state
-    const siteTitle = 'Kamil Łuc - CV'
-    const siteDescription = 'Kamil Łuc - Student, Software Developer, Kraków'
+    const { pageNumber, numPages } = this.state
+    const siteTitle = 'Gatsby Starter - Strata'
+    const siteDescription = 'Site description'
     // const width = document.getElementById('one').offsetWidth
 
     return (

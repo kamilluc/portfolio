@@ -134,7 +134,7 @@ class HomeIndex extends React.Component {
               w solidnym zespole aby zdobyć komercyjne doświadczenie.
             </p>
 
-            <h2>Umiejętności</h2>
+            <h5>Umiejętności</h5>
             <p className="techs">
               JavaScript, React, Gatsby, REST, HTTP,
               <br />

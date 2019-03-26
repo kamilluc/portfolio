@@ -7,8 +7,8 @@ import Contact from '../components/Contact'
 
 class Information extends React.Component {
   render() {
-    const siteTitle = 'Kamil Łuc - Kontakt'
-    const siteDescription = 'Kamil Łuc - Student, Software Developer, Kraków'
+    const siteTitle = 'Gatsby Starter - Strata'
+    const siteDescription = 'Site description'
 
     return (
       <Layout>

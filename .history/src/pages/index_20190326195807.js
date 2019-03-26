@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from 'gatsby'
+
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
@@ -111,8 +111,8 @@ class HomeIndex extends React.Component {
   }
 
   render() {
-    const siteTitle = 'Kamil Łuc'
-    const siteDescription = 'Kamil Łuc - Student, Software Developer, Kraków'
+    const siteTitle = 'Gatsby Starter - Strata'
+    const siteDescription = 'Site description'
 
     return (
       <Layout>
@@ -121,26 +121,18 @@ class HomeIndex extends React.Component {
           <meta name="description" content={siteDescription} />
         </Helmet>
 
-        <div id="main" className="move-to-top">
+        <div id="main">
           <section id="one">
             <header className="major">
-              <h2>
-                <Link to="/">Kamil Łuc</Link>
-              </h2>
+              <h2>Kamil Łuc</h2>
             </header>
             <p>
-              Student informatyki stosowanej (AGH) z Krakowa, od roku również
-              inżynier. Zainteresowany technologią webową. Obecnie szukam pracy
-              w solidnym zespole aby zdobyć komercyjne doświadczenie.
-            </p>
-
-            <h2>Umiejętności</h2>
-            <p className="techs">
-              JavaScript, React, Gatsby, REST, HTTP,
-              <br />
-              HTML, CSS, Bootstrap, GIT, Node, <br />
-              Express, Java, JavaFX, SQL, JIRA
-              <br />
+              Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc
+              nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae
+              lobortis tortor primis integer massa adipiscing id nisi accumsan
+              pellentesque commodo blandit enim arcu non at amet id arcu magna.
+              Accumsan orci faucibus id eu lorem semper nunc nisi lorem
+              vulputate lorem neque cubilia.
             </p>
           </section>
 

@@ -124,9 +124,7 @@ class HomeIndex extends React.Component {
         <div id="main" className="move-to-top">
           <section id="one">
             <header className="major">
-              <h2>
-                <Link to="/">Kamil Łuc</Link>
-              </h2>
+              <h2>Kamil Łuc</h2>
             </header>
             <p>
               Student informatyki stosowanej (AGH) z Krakowa, od roku również
@@ -134,7 +132,7 @@ class HomeIndex extends React.Component {
               w solidnym zespole aby zdobyć komercyjne doświadczenie.
             </p>
 
-            <h2>Umiejętności</h2>
+            <h5>Umiejętności</h5>
             <p className="techs">
               JavaScript, React, Gatsby, REST, HTTP,
               <br />

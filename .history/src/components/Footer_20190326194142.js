@@ -14,7 +14,6 @@ class Footer extends React.Component {
                 href="https://github.com/kamilluc"
                 className="icon fa-github"
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <span className="label">Github</span>
               </a>
@@ -24,7 +23,6 @@ class Footer extends React.Component {
                 href="https://www.facebook.com/kamil.potempodam"
                 className="icon fa-facebook"
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <span className="label">Facebook</span>
               </a>
