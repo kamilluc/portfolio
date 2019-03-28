@@ -33,7 +33,7 @@ class ProjectList extends React.Component {
           {proj.title}
         </h2>
         <h4>{proj.subtitle}</h4>
-        {proj.image ? (
+        {proj.image.url ? (
           <img src={proj.image.url} alt={proj.title} width="100%" />
         ) : null}
         <strong>Opis</strong>
@@ -42,7 +42,6 @@ class ProjectList extends React.Component {
         <strong>Technologie</strong>
         <p className="techs"> {proj.technologies}</p>
         <hr />
-        <br />
       </div>
     ))
 

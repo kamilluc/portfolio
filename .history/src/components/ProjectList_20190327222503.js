@@ -42,7 +42,6 @@ class ProjectList extends React.Component {
         <strong>Technologie</strong>
         <p className="techs"> {proj.technologies}</p>
         <hr />
-        <br />
       </div>
     ))
 

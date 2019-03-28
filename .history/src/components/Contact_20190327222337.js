@@ -66,15 +66,13 @@ class Contact extends React.Component {
                 kamilluc@outlook.com
               </li>
               <li>
-                <h3 className="icon fa-facebook">
-                  <span className="label">Facebook</span>
-                </h3>
                 <a
                   href="https://www.facebook.com/kamil.potempodam"
+                  className="icon fa-facebook"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Kamil Łuc
+                  <span className="label">Facebook</span>
                 </a>
               </li>
             </ul>

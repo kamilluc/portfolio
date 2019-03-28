@@ -71,6 +71,7 @@ class Contact extends React.Component {
                 </h3>
                 <a
                   href="https://www.facebook.com/kamil.potempodam"
+                  className="icon fa-facebook"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
