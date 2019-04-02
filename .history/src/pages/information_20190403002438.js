@@ -21,14 +21,11 @@ class Information extends React.Component {
           <section id="one">
             <header className="major">
               <h1>Kontakt</h1>
-              <hr />
             </header>
           </section>
-          <div>
-            {' '}
-            <Contact />
-          </div>
         </div>
+
+        <Contact />
       </Layout>
     )
   }

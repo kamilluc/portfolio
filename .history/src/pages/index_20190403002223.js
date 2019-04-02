@@ -22,13 +22,13 @@ class HomeIndex extends React.Component {
               <h2>
                 <Link to="/">Kamil Łuc</Link>
               </h2>
+              <hr />
             </header>
             <p>
               Student informatyki stosowanej (AGH) z Krakowa, od roku również
               inżynier. Zainteresowany technologią webową. Obecnie szukam pracy
               w solidnym zespole aby zdobyć komercyjne doświadczenie.
             </p>
-            <hr />
 
             <h2>Umiejętności</h2>
             <p className="techs">

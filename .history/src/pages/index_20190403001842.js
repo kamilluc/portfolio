@@ -28,7 +28,6 @@ class HomeIndex extends React.Component {
               inżynier. Zainteresowany technologią webową. Obecnie szukam pracy
               w solidnym zespole aby zdobyć komercyjne doświadczenie.
             </p>
-            <hr />
 
             <h2>Umiejętności</h2>
             <p className="techs">
@@ -39,7 +38,7 @@ class HomeIndex extends React.Component {
               <br />
             </p>
           </section>
-
+          
           <ul className="actions">
             <li>
               <Link to="/projects" className="button">

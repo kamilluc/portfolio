@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+
 import Layout from '../components/layout'
 
 class ProjectList extends React.Component {
@@ -54,8 +55,7 @@ class ProjectList extends React.Component {
         <div id="main" className="move-to-top">
           <section id="one">
             <header className="major">
-              <h1>Moje projekty</h1>
-              Legenda:
+              <h1>Moje projekty</h1>Skróty:
               <br />
               <a
                 href="dasd.com"

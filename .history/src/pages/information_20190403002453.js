@@ -19,15 +19,11 @@ class Information extends React.Component {
 
         <div id="main" className="move-to-top">
           <section id="one">
-            <header className="major">
-              <h1>Kontakt</h1>
-              <hr />
-            </header>
+            {/* <header className="major"> */}
+            <h1>Kontakt</h1>
+            {/* </header> */}
           </section>
-          <div>
-            {' '}
-            <Contact />
-          </div>
+          <Contact />
         </div>
       </Layout>
     )

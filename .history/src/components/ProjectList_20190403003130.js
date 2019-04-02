@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+
 import Layout from '../components/layout'
 
 class ProjectList extends React.Component {
@@ -55,8 +56,6 @@ class ProjectList extends React.Component {
           <section id="one">
             <header className="major">
               <h1>Moje projekty</h1>
-              Legenda:
-              <br />
               <a
                 href="dasd.com"
                 className="icon fa-github"
@@ -64,10 +63,9 @@ class ProjectList extends React.Component {
                 rel="noopener noreferrer"
               >
                 {' '}
-                - Kod/Opis na GitHub
+                Kod/Opis na GitHub
                 <span className="label">Github</span>
               </a>
-              <br />
               <a
                 href="dasd.com"
                 className="icon fa-dribbble"
@@ -75,8 +73,8 @@ class ProjectList extends React.Component {
                 rel="noopener noreferrer"
               >
                 {' '}
-                - Link do wersji LIVE
-                <span className="label">Demo</span>
+                Link do wersji LIVE
+                <span className="label">Github</span>
               </a>
               <hr />
             </header>

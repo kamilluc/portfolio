@@ -55,8 +55,7 @@ class ProjectList extends React.Component {
           <section id="one">
             <header className="major">
               <h1>Moje projekty</h1>
-              Legenda:
-              <br />
+              <h4>Skróty:</h4>
               <a
                 href="dasd.com"
                 className="icon fa-github"
