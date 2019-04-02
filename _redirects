@@ -1,5 +1,0 @@
-# These rules will change if you change your site’s custom domains or HTTPS settings
-
-# Redirect default Netlify subdomain to primary domain
-https://quirky-albattani-dcb33f.netlify.com/* https://kamilluc.pl/:splat 301!
-https://quirky-albattani-dcb33f.netlify.com/* /404.html 404
