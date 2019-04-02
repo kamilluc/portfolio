@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-portfolio-kamil-luc",
-  "description": "Kamil Łuc - Portfolio",
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
   "version": "1.0.0",
-  "author": "Kamil Łuc",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-plugin-google-analytics": "^2.0.17",
@@ -33,6 +33,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kamilluc/portfolio"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
